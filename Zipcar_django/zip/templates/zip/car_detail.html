@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for car in cars %}
+                <div>
+                    <li>
+                        <h2>{{ car }}</h2>
+                        <a href="/car_request/{{ car }}" >  Request </a>
+                    </li>
+                </div>
+    {% endfor %}
+{% endblock content %}
