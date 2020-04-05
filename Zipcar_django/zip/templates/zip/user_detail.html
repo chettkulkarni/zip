@@ -4,7 +4,8 @@
     {% for user in users %}
                 <div>
                     <li>
-                        <h2>{{ user }}</h2>
+                        <h2><b>{{ user.first_name }}</b> <h3> {{ user.last_name }}</h3></h2>
+                        <img src="{{ user.driving_license.url }}" class="img-responsive" style="width: 20pc;height:20pc ;  margin-right: 10px;" />
                     </li>
                 </div>
     {% endfor %}

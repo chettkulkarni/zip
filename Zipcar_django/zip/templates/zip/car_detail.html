@@ -2,11 +2,14 @@
 
 {% block content %}
     {% for car in cars %}
+    <div class="col-4 py-3"> 
+        <div class="card" style="width: 18rem;">
                 <div>
                     <li>
                         <h2>{{ car }}</h2>
                         <a href="/car_request/{{ car }}" >  Request </a>
                     </li>
-                </div>
+        </div>
+    </div>
     {% endfor %}
 {% endblock content %}
