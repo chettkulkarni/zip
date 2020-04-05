@@ -30,3 +30,6 @@ class Transactions(models.Model):
     status=models.CharField(max_length=200, choices=STATUS_CHOICES)
     def __str__(self):
         return (self.user+self.car+self.status)
+
+
+        
